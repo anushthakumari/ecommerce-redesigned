@@ -36,3 +36,23 @@
   left: 0;
   margin: auto;
 }
+
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.banner {
+  flex: 1;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: white;
+}
+
+.banner img {
+  border-radius: 30px;
+  max-width: 100%;
+}
