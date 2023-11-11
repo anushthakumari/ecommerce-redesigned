@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import "./App.css";
+
 import Header from "./common/header/Header";
 import Pages from "./pages/Pages";
 import Data from "./components/Data";
 import Cart from "./common/Cart/Cart";
 import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
-
-import "./App.css";
+import Details from "./pages/Details";
 
 function App() {
 	const { productItems } = Data;
@@ -64,6 +65,9 @@ function App() {
 							addToCart={addToCart}
 							decreaseQty={decreaseQty}
 						/>
+					</Route>
+					<Route path="/details/:id" exact>
+						<Details />
 					</Route>
 				</Switch>
 				<Footer />

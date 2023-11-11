@@ -5,13 +5,13 @@ const Wrapper = () => {
 	const data = [
 		{
 			cover: <i class="fa-solid fa-truck-fast"></i>,
-			title: "Worldwide Delivery",
+			title: "Worldwide Delivery By VTCS",
 			decs: "We offer competitive prices on our 100 million plus product any range.",
 		},
 		{
 			cover: <i class="fa-solid fa-id-card"></i>,
 			title: "Safe Payment",
-			decs: "We offer competitive prices on our 100 million plus product any range.",
+			decs: "We offer Safe Payment Using KuickPay, VISA, NET BANKING, KEENU.",
 		},
 		{
 			cover: <i class="fa-solid fa-shield"></i>,
