@@ -274,9 +274,11 @@
 }
 
 .product-btn-group .buy-now {
-    background-color: var(--accent-color);
+    /* background-color: var(--accent-color); */
+    background-color: red;
     color: #fff;
-    border: 1px solid var(--accent-color);
+    /* border: 1px solid var(--accent-color); */
+    border: 1px solid red;
     border-radius: 4px;
     cursor: pointer;
 }
