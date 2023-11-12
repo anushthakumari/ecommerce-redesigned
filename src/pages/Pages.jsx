@@ -20,7 +20,8 @@ const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
 		<>
 			<Home CartItem={CartItem} />
 			<Banners imagePaths={imagePaths} />
-			<NewArrivals />
+			{/* new */}
+			<Discount title="New Arrivals" />
 			<div className="gray-bg">
 				<FullWidthBanner
 					heading={"Mibro Color Smart Watch"}
