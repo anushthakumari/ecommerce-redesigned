@@ -28,7 +28,7 @@ const DropdownContent = styled.div`
 `;
 
 const DropdownItem = styled.div`
-	padding: 12px 16px;
+	padding: 2px 10px;
 	text-decoration: none;
 	display: block;
 	cursor: pointer;
