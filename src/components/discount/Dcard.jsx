@@ -13,6 +13,9 @@ const Dcard = () => {
 		slidesToScroll: 1,
 		autoplay: true,
 	};
+
+	const handleView = (title) => (window.location.href = "/" + title);
+
 	return (
 		<>
 			<Slider {...settings}>
@@ -39,7 +42,11 @@ const Dcard = () => {
 								</div>
 								<h4>{value.name}</h4>
 								<span>{value.price}</span>
-								<button className="button">Buy Now</button>
+								<button
+									className="button"
+									onClick={handleView.bind(value.name)}>
+									Buy Now
+								</button>
 							</div>
 						</>
 					);
