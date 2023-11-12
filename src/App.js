@@ -10,6 +10,7 @@ import Cart from "./common/Cart/Cart";
 import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
 import Details from "./pages/Details";
+import FooterDesc from "./components/footerDesc";
 
 function App() {
 	const { productItems } = Data;
@@ -71,6 +72,7 @@ function App() {
 					</Route>
 				</Switch>
 				<Footer />
+				<FooterDesc />
 			</Router>
 		</>
 	);
