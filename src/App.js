@@ -66,7 +66,7 @@ function App() {
 							decreaseQty={decreaseQty}
 						/>
 					</Route>
-					<Route path="/details/:id" exact>
+					<Route path="/:id" exact>
 						<Details />
 					</Route>
 				</Switch>

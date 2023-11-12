@@ -123,6 +123,13 @@ const Details = () => {
 	return (
 		<div class="container" style={{ marginTop: "30px" }}>
 			<div class="single-product">
+				<div class="breadcrumb">
+					<span>
+						<a href="#">Home</a>
+					</span>
+					<span class="active">amazon-fire-7-1gb-8gb-7-inches-box-pack</span>
+				</div>
+
 				<div class="row-f">
 					<div class="col-6">
 						<div class="product-image">
@@ -142,16 +149,6 @@ const Details = () => {
 						</div>
 					</div>
 					<div class="col-6">
-						{/* <div class="breadcrumb">
-							<span>
-								<a href="#">Home</a>
-							</span>
-							<span>
-								<a href="#">Product</a>
-							</span>
-							<span class="active">T-shirt</span>
-						</div> */}
-
 						<div class="product">
 							<div class="product-title">
 								<h2>

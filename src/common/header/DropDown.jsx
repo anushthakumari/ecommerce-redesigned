@@ -1,6 +1,6 @@
 // Dropdown.js
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 
 const DropdownContainer = styled.div`
@@ -12,8 +12,8 @@ const DropdownButton = styled.button`
 	background-color: transparent;
     font-family:"Poppins", sans-serif
 	color: black;
-	padding: 4px;
-	font-size: 14px;
+	padding: 2px;
+	font-size: 12px;
 	border: none;
 	cursor: pointer;
 `;
@@ -25,6 +25,7 @@ const DropdownContent = styled.div`
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
+	line-height: 4vh;
 `;
 
 const DropdownItem = styled.div`
@@ -45,14 +46,36 @@ const Dropdown = ({ options, children }) => {
 		setIsOpen(!isOpen);
 	};
 
+	const dropdownRef = useRef(null);
+
+	const handleClickOutside = (event) => {
+		if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+			setIsOpen(false);
+		}
+	};
+
+	useEffect(() => {
+		document.addEventListener("click", handleClickOutside);
+
+		return () => {
+			document.removeEventListener("click", handleClickOutside);
+		};
+	}, []);
+
 	return (
-		<DropdownContainer>
+		<DropdownContainer ref={dropdownRef}>
 			<DropdownButton onClick={toggleDropdown}>{children}</DropdownButton>
-			<DropdownContent isOpen={isOpen}>
-				{options.map((option, index) => (
-					<DropdownItem key={index}>{option}</DropdownItem>
-				))}
-			</DropdownContent>
+			{options ? (
+				<DropdownContent isOpen={isOpen}>
+					{options.map((option, index) => (
+						<DropdownItem style={{ fontSize: "14px" }} key={index}>
+							{option}
+						</DropdownItem>
+					))}
+				</DropdownContent>
+			) : (
+				""
+			)}
 		</DropdownContainer>
 	);
 };
