@@ -9,7 +9,7 @@ const Dcard = () => {
 	const settings = {
 		dots: false,
 		infinite: true,
-		slidesToShow: 6,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		autoplay: true,
 	};
@@ -19,9 +19,23 @@ const Dcard = () => {
 				{Ddata.map((value, index) => {
 					return (
 						<>
-							<div className="box product" key={index}>
+							<div
+								className="box product"
+								style={{
+									width: "250px",
+								}}
+								key={index}>
 								<div className="img">
-									<img src={value.cover} alt="" width="100%" />
+									<img
+										src={value.cover}
+										alt=""
+										width="100%"
+										style={{
+											height: "150px",
+											objectFit: "cover",
+											objectPosition: "center",
+										}}
+									/>
 								</div>
 								<h4>{value.name}</h4>
 								<span>{value.price}</span>

@@ -1,48 +1,80 @@
 const Ddata = [
 	{
-		cover: "./images/discount/discount-1.png",
-		name: "BenuX 2022",
-		price: "PKR 250",
+		name: "Apple MacBook Air M2",
+		description:
+			"The latest Apple MacBook Air, with a powerful M2 chip, a bright and colorful Liquid Retina display, and a long-lasting battery.",
+		price: "PKR 1199",
+		cover: "/images/product/mac-air.jpeg",
 	},
 	{
-		cover: "./images/discount/discount-2.png",
-		name: "Sony TV 1080p",
-		price: "PKR 450",
+		name: "Microsoft Surface",
+		description:
+			"A versatile and powerful laptop from Microsoft, with a long-lasting battery, a comfortable keyboard, and a variety of ports.",
+		price: "PKR 1299",
+		cover: "/images/product/surface.jpg",
 	},
 	{
-		cover: "./images/discount/discount-3.png",
-		name: "Sony PS4",
-		price: "PKR 50",
+		name: "Dell XPS 13",
+		description:
+			"A thin and light laptop from Dell with a beautiful InfinityEdge display, a long-lasting battery, and powerful performance.",
+		price: "PKR 999",
+		cover: "/images/product/dell.jpg",
 	},
 	{
-		cover: "./images/discount/discount-4.png",
-		name: "Setgearr 2022",
-		price: "PKR 100",
+		name: "HP Spectre x360 14",
+		description:
+			"A convertible laptop from HP with a beautiful OLED display, powerful performance, and a long-lasting battery.",
+		price: "PKR 1399",
+		cover: "/images/product/hp.jpeg",
 	},
 	{
-		cover: "./images/discount/discount-5.png",
-		name: "Tony BGB",
-		price: "PKR 20",
+		name: "Lenovo ThinkPad X1",
+		description:
+			"A durable and lightweight business laptop from Lenovo with a long-lasting battery, a comfortable keyboard, and powerful performance.",
+		price: "PKR 1499",
+		cover: "/images/product/thinkpad.webp",
 	},
 	{
-		cover: "./images/discount/discount-6.png",
-		name: "RG products",
-		price: "PKR 200",
+		name: "Asus ROG Zephyrus",
+		description:
+			"A powerful gaming laptop from Asus with a fast display, powerful hardware, and a variety of ports.",
+		price: "PKR 1599",
+		cover: "/images/product/rog.png",
 	},
 	{
-		cover: "./images/discount/discount-7.png",
-		name: "Ranasonic 2022",
-		price: "PKR 300",
+		name: "Acer Predator Helios",
+		description:
+			"An affordable gaming laptop from Acer with a fast display, powerful hardware, and a variety of ports.",
+		price: "PKR 1099",
+		cover: "/images/product/predator.webp",
 	},
 	{
-		cover: "./images/discount/discount-8.png",
-		name: "Pune HD",
-		price: "PKR 30",
+		name: "Razer Blade 14",
+		description:
+			"A thin and light gaming laptop from Razer with a powerful display, powerful hardware, and a variety of ports.",
+		price: "PKR 1999",
+		cover: "/images/product/razer.jpg",
 	},
 	{
-		cover: "./images/discount/discount-9.png",
-		name: "Sony CCTV",
-		price: "PKR 80",
+		name: "Alienware x15 R2",
+		description:
+			"A powerful and stylish gaming laptop from Alienware with a high refresh rate display, powerful hardware, and a variety of ports.",
+		price: "PKR 2199",
+		cover: "/images/product/al.webp",
+	},
+	{
+		name: "Mac mini",
+		description:
+			"A powerful and compact desktop computer from Apple with a variety of ports and powerful performance.",
+		price: "PKR 799",
+		cover: "/images/product/mac-min.webp",
+	},
+	{
+		name: "iMac",
+		description:
+			"A stylish and powerful all-in-one desktop computer from Apple with a beautiful Retina display, powerful performance, and a variety of ports.",
+		price: "PKR 1299",
+		cover: "/images/product/icmac.jpg",
 	},
 ];
 export default Ddata;

@@ -31,6 +31,7 @@ const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
 				/>
 			</div>
 			<Banners imagePaths={imagePaths2} />
+			{/* mobile phones */}
 			<FlashDeals productItems={productItems} addToCart={addToCart} />
 			<div className="gray-bg">
 				<div className="container">
@@ -43,7 +44,9 @@ const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
 					</div>
 				</div>
 			</div>
+			{/* brands */}
 			<TopCate />
+			{/* laptops */}
 			<Discount />
 			<Gadgets />
 			{/* <Shop shopItems={shopItems} addToCart={addToCart} /> */}
