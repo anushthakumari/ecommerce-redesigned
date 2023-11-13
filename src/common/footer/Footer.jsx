@@ -9,9 +9,9 @@ const Footer = () => {
 					<div className="box">
 						<img src="/logo.png" alt="rem" height={50} />
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-							libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat
-							et lectus vel ut sollicitudin elit at amet.
+							Symbios.pk is one of Pakistan’s first and most experienced
+							e-commerce stores. Since 2006 we have helped around a ‘Million
+							Customers’ happily get what they wanted all across Pakistan.
 						</p>
 						<div className="icon d_flex">
 							<div className="img d_flex">
